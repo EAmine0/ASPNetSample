@@ -40,9 +40,9 @@ namespace tryone.Controllers
             AdomdConnection con = new AdomdConnection(cubeSource);
             con.Open();
 
-            AdomdDataAdapter adapt = new AdomdDataAdapter(cubeQuery, con);
-            DataTable datatable = new DataTable();
-            adapt.Fill(datatable);
+            //AdomdDataAdapter adapt = new AdomdDataAdapter(cubeQuery, con);
+            //DataTable datatable = new DataTable();
+            //adapt.Fill(datatable);
 
             AdomdCommand cmd = new AdomdCommand(cubeQuery, con);
             AdomdDataReader reader = cmd.ExecuteReader(); //Execute query
