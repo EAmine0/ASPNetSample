@@ -49,7 +49,7 @@ namespace tryone.Controllers
 
             List<string> site_status = new List<string>();
             List<int> status_total = new List<int>();
-            List<string> last_status_total = new List<string>();
+            List<int> last_status_total = new List<int>();
 
             while (reader.Read())   // read
             {
