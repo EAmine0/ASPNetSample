@@ -53,7 +53,6 @@ namespace tryone.Controllers
 
             while (reader.Read())   // read
             {
-
                 site_status.Add(reader.GetValue(0).ToString());
                 status_total.Add(int.Parse(reader.GetValue(2).ToString()));
                 last_status_total.Add(int.Parse(reader.GetValue(4).ToString()));
